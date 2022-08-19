@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>keypto-chain</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='images/favicon.png')}}">
+  <link type="text/css" href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css')}}" />
+  <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/slick.css')}}">
+  <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/animate.min.css')}}">
+  <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+  <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/responsive.css')}}">
+</head>
+
+<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
+  <!-- back to top part start-->
+  <div class="back-to-top"><a href="#" class="back-top-btn back-index"><i class="fa fa-angle-double-up"></i></a></div>
+  <!-- back to top part end-->
+  <!-- preloader -->
+  <div class="preloader"><img src="{{url_for('static', filename='images/preloader.svg')}}" class="img-responsive" alt="img"></div>
+  <!-- Here is the Hedder Part Start -->
+  <header id="home">
+    <nav class="navbar navbar-default custom_nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-3">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+              <a href="home.html"><img src="{{url_for('static', filename='images/slider-logo.png')}}" class="img-responsive" alt="img"></a>
+            </div>
+          </div>
+          <div class="col-md-8 col-md-offset-1 col-sm-9 col-xs-12">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav nav-menu">
+                <li class="active"><a href="#banner" class="">Home</a></li>
+                <li><a href="#pricing">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">pages <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/404">404 page</a></li>
+                    <li><a href="/signup">sign up</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blogs <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/blog">blog grid</a></li>
+                  </ul>
+                </li>
+                <li><a href="#contacts">Contact</a></li>
+              </ul>
+              <ul class="navbar-right menu-btn">
+                <li><a href="#" class="" data-toggle="modal" data-target="#exampleModal2">Signup/login</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  {% block modal %}
+  {% endblock %}
+  {% block banner %}
+  {% endblock %}
+  {% block pricing %}
+  {% endblock %}
+  {% block about %}
+  {% endblock %}
+  {% block service %}
+  {% endblock %}
+  {% block work %}
+  {% endblock %}
+  {% block table %}
+  {% endblock %}
+  {% block graph %}
+  {% endblock %}
+  {% block testimonial %}
+  {% endblock %}
+  {% block blog %}
+  {% endblock %}
+  {% block contact %}
+  {% endblock %}
+  {% block footer %}
+  {% endblock %}
+  {% block ticker %}
+  {% endblock %}
+<!--------------  Here is the ticker Part End ------------------>
+  <script src="{{url_for('static', filename='js/jquery-1.12.4.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/slick.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/SmoothScroll.js')}}"></script>
+  <script src="{{url_for('static', filename='js/utils.js')}}"></script>
+  <script src="{{url_for('static', filename='js/widget.js')}}"></script>
+  <script src="{{url_for('static', filename='js/webticker.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/Carousel.js')}}"></script>
+  <script src="{{url_for('static', filename='js/main.js')}}"></script>
+</body>
+</html>

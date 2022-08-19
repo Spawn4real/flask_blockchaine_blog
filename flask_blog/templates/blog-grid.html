@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>keypto-chain</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='images/favicon.png')}}">
+  <link type="text/css" href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css')}}" />
+  <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/slick.css')}}">
+  <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/animate.min.css')}}">
+  <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+  <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/responsive.css')}}">
+</head>
+
+<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
+  <!-- back to top part start-->
+  <div class="back-to-top"><a href="#" class="back-top-btn back-index"><i class="fa fa-angle-double-up"></i></a></div>
+  <!-- back to top part end-->
+  <!-- preloader -->
+  <div class="preloader"><img src="images/preloader.svg" class="img-responsive" alt="img"></div>
+  <!-- Here is the Hedder Part Start -->
+  <header id="home">
+    <nav class="navbar navbar-default custom_nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-3">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+              <a href="home.html"><img src="images/slider-logo.png" class="img-responsive" alt="img"></a>
+            </div>
+          </div>
+          <div class="col-md-8 col-md-offset-1 col-sm-9">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav nav-menu">
+                <li class="active"><a href="home.html" class="">Home</a></li>
+                <li><a href="#pricing">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">pages <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="404.html">404 page</a></li>
+                    <li><a href="signup.html">sign up</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blogs <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="blog-grid.html">blog grid</a></li>
+                    <li><a href="blog-grid-right-menu.html">blog grid right menu</a></li>
+                    <li><a href="blog-grid-left-menu.html">blog grid left menu</a></li>
+                    <li><a href="blog-list-left-menu.html">blog list left menu</a></li>
+                    <li><a href="blog-list-right-menu.html">blog list right menu</a></li>
+                    <li><a href="blog-grid-detail.html">blog details page</a></li>
+                  </ul>
+                </li>
+                <li><a href="#contacts">Contact</a></li>
+              </ul>
+              <ul class="button--naira menu-btn">
+                <li><a href="#" class="button button--wayra" data-toggle="modal" data-target="#exampleModal2">Signup/login</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Modal -->
+  <div class="col-12">
+    <div class="row">
+      <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header modal-header2"><a href="#" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></a></div>
+            <div class="modal-body">
+              <form>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="heading heading3 col-lg-12 text-center">
+                      <h2>Customer Login</h2></div>
+                    <div class="col-lg-11">
+                      <div class="form-group login-lable">
+                        <p>E-mail Address <span class="required">*</span></p>
+                        <input type="email" class="form-control" id="exampleFormControlInput16" placeholder="E-mail Address">
+                      </div>
+                    </div>
+                    <div class="col-lg-11">
+                      <div class="form-group login-lable">
+                        <p>Password <span class="required">*</span></p>
+                        <input type="password" class="form-control" id="exampleFormControlInput15" placeholder="Password">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 checkbox checkbox-primary">
+                      <input id="checkbox2" type="checkbox">
+                      <p>Remember me</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 blog-btn submit-join"><a href="#" class="btn bro-btn btn-4">Login</a></div>
+                <div class="col-lg-12 account">
+                  <p>Don't have an account?<a href="signup.html">Sign up</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal end -->
+  <!--            Here is the header part End -->
+  <!--            Here is the Banner part Start -->
+  <section id="banner" class="error-banner">
+    <div class="error-overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="error_Page">
+            <h1>Blog grid view</h1>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">
+                  <p>home</p>
+                </a>
+              </li>
+              <li>
+                <p>Blog grid view</p>
+              </li>
+            </ul>
+            <div class="clr"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--            Here is the Banner part End -->
+  <!--             Here is the Blog grid part Start-->
+  <section id="blog-page" class="blog">
+    <div class="container">
+      <div class="Blog-header heder-common">
+        <h2>Our Blog</h2></div>
+      <div class="row blog_grid">
+        <!-- Blog grid part Start  -->
+        <div class="col-md-3 col-sm-2 blog_grid_btn">
+          <div class="sort_icon"><a href="blog-grid.html"><span class="glyphicon glyphicon-th "></span></a><a href="blog-list-right-menu.html"><span class="glyphicon glyphicon-th-list"></span></a></div>
+        </div>
+        <div class="col-md-5 col-sm-5 middle-col">
+          <div class="sort_show"><span>Sort by :</span>
+            <select>
+              <option value="">Name</option>
+              <option value="">bit</option>
+              <option value="">coin</option>
+            </select><span>Showing :</span>
+            <select>
+              <option value="">10</option>
+              <option value="">11</option>
+              <option value="">12</option>
+              <option value="">13</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-5 blog_pagination pl0 pr0">
+          <div class="sort_show sort_upper_show">
+            <nav aria-label="Page navigation">
+              <div class="col-sm-2 col-xs-3">
+                <p>Pages:</p>
+              </div>
+              <div class="col-sm-10 col-xs-9 pl0 pr0 ">
+                <ul class="pagination">
+                  <li><a href="#">01</a></li>
+                  <li><a href="#">02</a></li>
+                  <li><a href="#">03</a></li>
+                  <li>
+                    <form action="#">
+                      <input type="text">
+                    </form>
+                  </li>
+                  <li><a href="#">2018</a></li>
+                  <li><a href="#" class="blog_grid_next"><i class="fa fa-play"></i></a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="row grid_row">
+        <div class="col-md-4 blog-htm-inner">
+          <div class="single_blog">
+            <div class="blog-content">
+              <div class="blog_img "><img src="images/blog-image-1.png" class="img-responsive" alt="img">
+                <div>
+                  <div class="overlay">
+                    <div class="overlay_shape"><a href="blog-grid-detail.html">read more<i class="fa fa-long-arrow-right"></i></a></div>
+                    <div class="overlay-text">
+                      <div class="overlay_text1"><i class="fa fa-user"></i>posted by: admin</div>
+                      <div class="overlay_text2"><i class="fa fa-eye"></i>1211 views</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>keypto-chain is the Best Money Exchanger</h4>
+              <p>26 October 2018</p>
+              <ul>
+                <li><a href="#"><i class="fa fa-share"></i>34 share</a></li>
+                <li><a href="#"><i class="fa fa-heart"></i>102 likes</a></li>
+                <li><a href="#"><i class="fa fa-comments"></i>54 comments</a></li>
+              </ul>
+              <div class="clr"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 blog-htm-inner">
+          <div class="single_blog">
+            <div class="blog-content">
+              <div class="blog_img "><img src="images/blog-image-2.png" class="img-responsive" alt="img">
+                <div>
+                  <div class="overlay">
+                    <div class="overlay_shape"><a href="blog-grid-detail.html">read more<i class="fa fa-long-arrow-right"></i></a></div>
+                    <div class="overlay-text">
+                      <div class="overlay_text1"><i class="fa fa-user"></i>posted by: admin</div>
+                      <div class="overlay_text2"><i class="fa fa-eye"></i>1211 views</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>keypto-chain is the Best Money Exchanger</h4>
+              <p>26 October 2018</p>
+              <ul>
+                <li><a href="#"><i class="fa fa-share"></i>34 share</a></li>
+                <li><a href="#"><i class="fa fa-heart"></i>102 likes</a></li>
+                <li><a href="#"><i class="fa fa-comments"></i>54 comments</a></li>
+              </ul>
+              <div class="clr"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 blog-htm-inner">
+          <div class="single_blog">
+            <div class="blog-content">
+              <div class="blog_img "><img src="images/blog-image-3.png" class="img-responsive" alt="img">
+                <div>
+                  <div class="overlay">
+                    <div class="overlay_shape"><a href="blog-grid-detail.html">read more<i class="fa fa-long-arrow-right"></i></a></div>
+                    <div class="overlay-text">
+                      <div class="overlay_text1"><i class="fa fa-user"></i>posted by: admin</div>
+                      <div class="overlay_text2"><i class="fa fa-eye"></i>1211 views</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>keypto-chain is the Best Money Exchanger</h4>
+              <p>15 October 2018</p>
+              <ul>
+                <li><a href="#"><i class="fa fa-share"></i>50 share</a></li>
+                <li><a href="#"><i class="fa fa-heart"></i>128 likes</a></li>
+                <li><a href="#"><i class="fa fa-comments"></i>28 comments</a></li>
+              </ul>
+              <div class="clr"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 blog-htm-inner">
+          <div class="single_blog">
+            <div class="blog-content">
+              <div class="blog_img "><img src="images/Blog_Grid_View-6.jpg" class="img-responsive" alt="img">
+                <div>
+                  <div class="overlay">
+                    <div class="overlay_shape"><a href="blog-grid-detail.html">read more<i class="fa fa-long-arrow-right"></i></a></div>
+                    <div class="overlay-text">
+                      <div class="overlay_text1"><i class="fa fa-user"></i>posted by: admin</div>
+                      <div class="overlay_text2"><i class="fa fa-eye"></i>1211 views</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>keypto-chain is the Best Money Exchanger</h4>
+              <p>22 Spet 2018</p>
+              <ul>
+                <li><a href="#"><i class="fa fa-share"></i>14 share</a></li>
+                <li><a href="#"><i class="fa fa-heart"></i>122 likes</a></li>
+                <li><a href="#"><i class="fa fa-comments"></i>48 comments</a></li>
+              </ul>
+              <div class="clr"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 blog-htm-inner">
+          <div class="single_blog">
+            <div class="blog-content">
+              <div class="blog_img "><img src="images/Blog_Grid_View-9.jpg" class="img-responsive" alt="img">
+                <div>
+                  <div class="overlay">
+                    <div class="overlay_shape"><a href="blog-grid-detail.html">read more<i class="fa fa-long-arrow-right"></i></a></div>
+                    <div class="overlay-text">
+                      <div class="overlay_text1"><i class="fa fa-user"></i>posted by: admin</div>
+                      <div class="overlay_text2"><i class="fa fa-eye"></i>1211 views</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>keypto-chain is the Best Money Exchanger</h4>
+              <p>04 Sept 2018</p>
+              <ul>
+                <li><a href="#"><i class="fa fa-share"></i>50 share</a></li>
+                <li><a href="#"><i class="fa fa-heart"></i>205 likes</a></li>
+                <li><a href="#"><i class="fa fa-comments"></i>89 comments</a></li>
+              </ul>
+              <div class="clr"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 blog-htm-inner">
+          <div class="single_blog">
+            <div class="blog-content">
+              <div class="blog_img "><img src="images/Blog_Grid_View-8.jpg" class="img-responsive" alt="img">
+                <div>
+                  <div class="overlay">
+                    <div class="overlay_shape"><a href="blog-grid-detail.html">read more<i class="fa fa-long-arrow-right"></i></a></div>
+                    <div class="overlay-text">
+                      <div class="overlay_text1"><i class="fa fa-user"></i>posted by: admin</div>
+                      <div class="overlay_text2"><i class="fa fa-eye"></i>1211 views</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>keypto-chain is the Best Money Exchanger</h4>
+              <p>29 Aug 2018</p>
+              <ul>
+                <li><a href="#"><i class="fa fa-share"></i>61 share</a></li>
+                <li><a href="#"><i class="fa fa-heart"></i>152 likes</a></li>
+                <li><a href="#"><i class="fa fa-comments"></i>43 comments</a></li>
+              </ul>
+              <div class="clr"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 blog-htm-inner">
+          <div class="single_blog">
+            <div class="blog-content">
+              <div class="blog_img "><img src="images/Blog_Grid_View-5.jpg" class="img-responsive" alt="img">
+                <div>
+                  <div class="overlay">
+                    <div class="overlay_shape"><a href="blog-grid-detail.html">read more<i class="fa fa-long-arrow-right"></i></a></div>
+                    <div class="overlay-text">
+                      <div class="overlay_text1"><i class="fa fa-user"></i>posted by: admin</div>
+                      <div class="overlay_text2"><i class="fa fa-eye"></i>1211 views</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>keypto-chain is the Best Money Exchanger</h4>
+              <p>19 Aug 2018</p>
+              <ul>
+                <li><a href="#"><i class="fa fa-share"></i>24 share</a></li>
+                <li><a href="#"><i class="fa fa-heart"></i>162 likes</a></li>
+                <li><a href="#"><i class="fa fa-comments"></i>74 comments</a></li>
+              </ul>
+              <div class="clr"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 blog-htm-inner">
+          <div class="single_blog">
+            <div class="blog-content">
+              <div class="blog_img "><img src="images/Blog_Grid_View-6.jpg" class="img-responsive" alt="img">
+                <div>
+                  <div class="overlay">
+                    <div class="overlay_shape"><a href="blog-grid-detail.html">read more<i class="fa fa-long-arrow-right"></i></a></div>
+                    <div class="overlay-text">
+                      <div class="overlay_text1"><i class="fa fa-user"></i>posted by: admin</div>
+                      <div class="overlay_text2"><i class="fa fa-eye"></i>1211 views</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>keypto-chain is the Best Money Exchanger</h4>
+              <p>12 Aug 2018</p>
+              <ul>
+                <li><a href="#"><i class="fa fa-share"></i>29 share</a></li>
+                <li><a href="#"><i class="fa fa-heart"></i>92 likes</a></li>
+                <li><a href="#"><i class="fa fa-comments"></i>46 comments</a></li>
+              </ul>
+              <div class="clr"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 blog-htm-inner blog-list-bottom">
+          <div class="single_blog">
+            <div class="blog-content">
+              <div class="blog_img "><img src="images/Blog_Grid_View-7.jpg" class="img-responsive" alt="img">
+                <div>
+                  <div class="overlay">
+                    <div class="overlay_shape"><a href="blog-grid-detail.html">read more<i class="fa fa-long-arrow-right"></i></a></div>1
+                    <div class="overlay-text">
+                      <div class="overlay_text1"><i class="fa fa-user"></i>posted by: admin</div>
+                      <div class="overlay_text2"><i class="fa fa-eye"></i>1211 views</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>keypto-chain is the Best Money Exchanger</h4>
+              <p>01 Aug 2018</p>
+              <ul>
+                <li><a href="#"><i class="fa fa-share"></i>54 share</a></li>
+                <li><a href="#"><i class="fa fa-heart"></i>112 likes</a></li>
+                <li><a href="#"><i class="fa fa-comments"></i>62 comments</a></li>
+              </ul>
+              <div class="clr"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Blog grid part End -->
+      <div class="row blog_grid ">
+        <div class="col-md-4 col-md-offset-4  col-sm-7 col-sm-offset-2 col-xs-12 blog_pagination blog_pagination-btm pl0 pr0">
+          <div class="sort_show sort_bottom_show">
+            <nav aria-label="Page navigation">
+              <div class="pagination-bottom">
+                <div class="col-sm-2 col-xs-2">
+                  <p>Pages:</p>
+                </div>
+                <div class="col-sm-10 col-xs-9 pl0 pr0 ">
+                  <ul class="pagination">
+                    <li><a href="#">01</a></li>
+                    <li><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                    <li>
+                      <form action="#">
+                        <input type="text">
+                      </form>
+                    </li>
+                    <li><a href="#">2017</a></li>
+                    <li><a href="#" class="blog_grid_next"><i class="fa fa-play"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--            Here is the Blog grid part End-->
+  <!--            Here is the Contact part Start -->
+  <section id="contacts" class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="contact-logo">
+            <a href="home.html"><img src="images/slider-logo.png" class="img-responsive" alt="img"></a>
+            <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et .</p>
+            <p>veniam, quis nostrud exercitation ullaco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="contact-address footer-common">
+            <h5>Get in Touch</h5>
+            <ul>
+              <li>
+                <p>l:</p><span>+1234 Huntingtong, Newyork City America</span></li>
+              <li>
+                <p>e:</p><span>keyptocurrency@245.com<br>cryptocurrency@bit.com</span></li>
+              <li>
+                <p>p:</p><span>+990 0124 567 890, +0987 654 321</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="contact-links footer-common">
+            <h5>Important Links</h5>
+            <ul>
+              <li>Home</li>
+              <li>About us</li>
+              <li>Our Services</li>
+              <li>Our Portfolio</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-news footer-common">
+            <h5>Signup for Newsletter</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+            <form action="#">
+              <div class="input-group">
+                <input type="email" class="form-controls" placeholder="Your E-mail Here"><span class="input-group-btn"><a class="button-form">Submit</a></span></div>
+            </form>
+            <a href="#"><img src="images/payment-image.png" class="img-responsive" alt="img"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--            Here is the Contact part End -->
+  <!-- footer start -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="footer-inner">
+            <p>Copyright © 2018. All rights <a href="http://www.bootstrapmb.com/">Reserved</a>by Designer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+  <script src="{{url_for('static', filename='js/jquery-1.12.4.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/slick.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/SmoothScroll.js')}}"></script>
+  <script src="{{url_for('static', filename='js/utils.js')}}"></script>
+  <script src="{{url_for('static', filename='js/widget.js')}}"></script>
+  <script src="{{url_for('static', filename='js/webticker.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/Carousel.js')}}"></script>
+  <script src="{{url_for('static', filename='js/main.js')}}"></script>
+</body>
+
+</html>
